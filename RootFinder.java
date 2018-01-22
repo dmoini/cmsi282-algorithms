@@ -28,8 +28,4 @@ public class RootFinder {
         int multiplier = (int) Math.pow(10, places);
         return (double) ((long) (number * multiplier)) / multiplier;
     }
-
-    public static void main(String[] args) {
-        System.out.println(sqrt(12, 0.001));
-    }
 }
