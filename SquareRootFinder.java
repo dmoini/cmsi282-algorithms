@@ -1,5 +1,5 @@
 public class SquareRootFinder {
-    private static double sqrt(double x, double epsilon) {
+    public static double sqrt(double x, double epsilon) {
         if (x < 0) {
             throw new IllegalArgumentException("Please input a positive number.");
         }
