@@ -3,8 +3,7 @@ public class PowersAndPolynomials {
         if (n == 0) {
             return 1;
         }
-        int halfPowerTimesHalfPower = xToPowerN(x, n / 2) * xToPowerN(x, n / 2);
-        return (n % 2 == 0) ? halfPowerTimesHalfPower : x * halfPowerTimesHalfPower;
+        return ((n % 2 == 0) ? 1 : x) * xToPowerN(x, n / 2) * xToPowerN(x, n / 2);
     }
 
     public static int polynomialEvaluation(int[] polynomial, int x) {
